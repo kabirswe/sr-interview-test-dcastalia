@@ -13,7 +13,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## The React JS implementation must have the following features in your code: 
+## The features Which I Implemented in my code: 
 
 1. Add to cart
 2. Remove from cart
