@@ -21,6 +21,7 @@ export default class ProductItem extends Component {
           image={product.image_id}
           rating={product.average_rating}
           price={product.price}
+          stock={product.stock_status}
           action={addToCartAction}
         />
       </>

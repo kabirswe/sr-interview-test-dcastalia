@@ -4,13 +4,15 @@ import Product from './Product'
 
 export default class CartItem extends Component {
   render() {
-    const { price, quantity, title, onRemove } = this.props
+    const { price, name, average_rating, image, stock, onRemove } = this.props
 
     return (
       <Product 
+        name={name}
+        image={image}
+        rating={average_rating}
         price={price}
-        quantity={quantity}
-        title={title}
+        stock={stock}
         action={<button onClick={onRemove}>{' X '}</button>}
       />
     )
@@ -19,7 +21,6 @@ export default class CartItem extends Component {
 
 CartItem.propTypes = {
   price: PropTypes.string,
-  quantity: PropTypes.number,
-  title: PropTypes.string,
+  name: PropTypes.string,
   onRemove: PropTypes.func.isRequired,
 }
